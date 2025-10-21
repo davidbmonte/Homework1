@@ -11,12 +11,32 @@ data_set <- c(15.8,22.7,26.8,19.1,18.5,14.4,8.3,25.9,26.4,9.8,21.9,10.5,17.3,6.2
 m_data <- mean(data_set) # Mean of the data set
 med_data <- median(data_set) # Median of the data set (also second quantile)
 mod_data <- getMode(data_set) # Mode of the data set
-var_data <- var(data_set)
-std_data <- sd(data_set)
-cv_data <- std_data/m_data
+var_data <- var(data_set) # Variance of the data set
+std_data <- sd(data_set) # Standard Deviation
+cv_data <- std_data/m_data # Coefficient of variation
+
 # ===== Item n. 2 ===== #
-boxplot(data_set)
-hist(data_set)
+
+# Create a histogram
+hist(data_set, 
+     main = "Histogram",
+     xlab = "Pollutant",
+     ylab = "Density",
+     col = "lightblue",
+     border = "black",
+     freq = FALSE,  # Plot densities instead of frequencies
+     ylim = c(0, 0.08))
+lines(density(data), col = "red", lwd = 2)  # Add density curve
+
+# Create a boxplot
+boxplot(data_set,
+        main = "Boxplot",
+        ylab = "Pollutant",
+        col = "lightgreen",
+        outline = TRUE)
+stripchart(data, method = "jitter", pch = 16, col = "blue", 
+           vertical = TRUE, add = TRUE, cex = 0.7)  # Add data points
+
 
 # ===== Item n. 3 ===== #
 quanta <- quantile(data_set, probs = c(0.25, 0.50, 0.75), na.rm = TRUE) # Gets all quantiles 
