@@ -11,7 +11,9 @@ data_set <- c(15.8,22.7,26.8,19.1,18.5,14.4,8.3,25.9,26.4,9.8,21.9,10.5,17.3,6.2
 m_data <- mean(data_set) # Mean of the data set
 med_data <- median(data_set) # Median of the data set (also second quantile)
 mod_data <- getMode(data_set) # Mode of the data set
-
+var_data <- var(data_set)
+std_data <- sd(data_set)
+cv_data <- std_data/m_data
 # ===== Item n. 2 ===== #
 boxplot(data_set)
 hist(data_set)
@@ -37,6 +39,9 @@ print("========== DATA ANALYSIS ==========")
 sprintf("Mean: %s", m_data)
 sprintf("Median: %s", med_data)
 sprintf("Mode: %s", mod_data)
+sprintf("Variance: %s", var_data)
+sprintf("Standard Deviation: %s", std_data)
+sprintf("Coefficient of variation: %s",cv_data)
 sprintf("Q1: %s", Q1)
 sprintf("Q2: %s", Q2)
 sprintf("Q3: %s", Q3)
