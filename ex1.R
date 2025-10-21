@@ -16,6 +16,8 @@ mod_data <- getMode(data_set) # Mode of the data set
 var_data <- var(data_set) # Variance of the data set
 std_data <- sd(data_set) # Standard Deviation
 cv_data <- std_data/m_data # Coefficient of variation
+amp_data <- max(data_set) - min(data_set)
+
 
 # ===== Item n. 2 ===== #
 
@@ -28,7 +30,7 @@ hist(data_set,
      border = "black",
      freq = FALSE,  # Plot densities instead of frequencies
      ylim = c(0, 0.08))
-lines(density(data), col = "red", lwd = 2)  # Add density curve
+lines(density(data_set), col = "red", lwd = 2)  # Add density curve
 
 # Create a boxplot
 boxplot(data_set,
@@ -36,7 +38,7 @@ boxplot(data_set,
         ylab = "Pollutant",
         col = "lightgreen",
         outline = TRUE)
-stripchart(data, method = "jitter", pch = 16, col = "blue", 
+stripchart(data_set, method = "jitter", pch = 16, col = "blue", 
            vertical = TRUE, add = TRUE, cex = 0.7)  # Add data points
 
 par(mfrow = c(1, 1))
@@ -55,6 +57,9 @@ total_days <- length(data_set) # Total number of days
 prop <- excess/total_days # Ratio of days over the limit vs days below the limit
 percent <- prop*100 
 
+
+
+
 print("========== DATA ANALYSIS ==========")
 sprintf("Mean: %s", m_data)
 sprintf("Median: %s", med_data)
@@ -62,6 +67,7 @@ sprintf("Mode: %s", mod_data)
 sprintf("Variance: %s", var_data)
 sprintf("Standard Deviation: %s", std_data)
 sprintf("Coefficient of variation: %s",cv_data)
+sprintf("Amplitude: %s", amp_data)
 sprintf("Q1: %s", Q1)
 sprintf("Q2: %s", Q2)
 sprintf("Q3: %s", Q3)
