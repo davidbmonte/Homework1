@@ -78,6 +78,7 @@ Este repositório contém a solução do primeiro homework da disciplina **Estat
 ### Licença
 Este projeto é para fins acadêmicos e está sujeito às políticas de integridade acadêmica da Universidade Federal do Ceará.
 
-Data de Entrega: 26 de Outubro de 2025
-Disciplina: Estatística para Engenheiros (TI0111)
-Instituição: Universidade Federal do Ceará
+
+- Data de Entrega: 26 de Outubro de 2025
+- Disciplina: Estatística para Engenheiros (TI0111)
+- Instituição: Universidade Federal do Ceará
