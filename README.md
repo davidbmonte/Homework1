@@ -6,8 +6,8 @@ Este repositório contém a solução do primeiro homework da disciplina **Estat
 
 ## Autores
 
-- **David Baima Monte** ([@davidbmonte](https://github.com/davidbmonte))
-- **Diego Mendes** ([@diegomendes80](https://github.com/diegomendes80))
+- **David Baima Monte** ([@davidbmonte](https://github.com/davidbmonte)) - Questões 1 e 3
+- **Diego Mendes** ([@diegomendes80](https://github.com/diegomendes80)) - Questão 2
 
 ## Objetivos do Trabalho
 
