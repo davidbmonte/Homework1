@@ -11,13 +11,13 @@ Este repositório contém a solução do primeiro homework da disciplina **Estat
 
 ## Estrutura do Repositório
 Homework1/
-├── Homework1.pdf # Relatório completo em PDF
-├── ex1.R # Script R para a Questão 1
-├── ex2.R # Script R para a Questão 2
-├── ex3.R # Script R para a Questão 3
-├── HW1_bike_sharing.csv # Base de dados para a Questão 3
-├── TI0111_HW1_assignment.pdf # Enunciado original do homework
-└── README.md # Este arquivo
+├── Homework1.pdf                 # Relatório completo em PDF
+├── ex1.R                        # Script R para a Questão 1
+├── ex2.R                        # Script R para a Questão 2
+├── ex3.R                        # Script R para a Questão 3
+├── HW1_bike_sharing.csv         # Base de dados para a Questão 3
+├── TI0111_HW1_assignment.pdf    # Enunciado original do homework
+└── README.md                    # Este arquivo
 
 
 ## Objetivos do Trabalho
